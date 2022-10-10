@@ -1,0 +1,139 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-10-10T18:41:59.723Z",
+    "end": "2022-10-10T18:41:59.763Z",
+    "duration": 40,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e4d38f69-5ec5-4483-9e53-47749964a162",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f8a0d29e-ad70-4b72-9156-926ef4db7729",
+          "title": "Testing Basic APIS sending message",
+          "fullFile": "E:\\ns\\create-newton-project-cli\\postclass\\abcd\\response-methodss\\__tests__\\test.js",
+          "file": "\\__tests__\\test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "/ GET Request /",
+              "fullTitle": "Testing Basic APIS sending message / GET Request /",
+              "timedOut": false,
+              "duration": 27,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "chai.request(app)\n  .get(\"/\")\n  .end((err, res) => {\n    expect(res).to.be.html;\n    expect(res.text).to.equals('Hello Newton School');\n    done();\n  });",
+              "err": {},
+              "uuid": "c0a2356d-a34a-4302-b76c-e7f58e82dbb7",
+              "parentUUID": "f8a0d29e-ad70-4b72-9156-926ef4db7729",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c0a2356d-a34a-4302-b76c-e7f58e82dbb7"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 27,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 60000
+        },
+        {
+          "uuid": "6d61a635-9434-40cb-af67-8ba463ca7b09",
+          "title": "Testing header status which should come false",
+          "fullFile": "E:\\ns\\create-newton-project-cli\\postclass\\abcd\\response-methodss\\__tests__\\test.js",
+          "file": "\\__tests__\\test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "/ GET Request /header",
+              "fullTitle": "Testing header status which should come false / GET Request /header",
+              "timedOut": false,
+              "duration": 5,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const headerss=\"header\";\nchai.request(app)\n  .get(\"/\"+headerss)\n  .end((err, res) => {\n    expect(res).to.be.json;\n    expect(res.text).to.equals('false');\n    // expect(res).to.be.json;\n    // expect(res.locals.authenticated).to.be.false;\n    // console.log(res.locals);\n    // expect(res.locals).to.be.text;\n    // expect(res.locals).to.equals('this is res.local text');\n    done();\n  });",
+              "err": {},
+              "uuid": "b87fe9ef-5cef-4da9-afd3-40228e86aec8",
+              "parentUUID": "6d61a635-9434-40cb-af67-8ba463ca7b09",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b87fe9ef-5cef-4da9-afd3-40228e86aec8"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 60000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 60000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "8.2.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": null,
+      "version": "5.1.0"
+    }
+  }
+}
